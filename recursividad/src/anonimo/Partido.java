@@ -30,7 +30,7 @@ public class Partido {
 		list.sort(new Comparator<Estudiante>() {
 			@Override
 			public int compare(Estudiante o1, Estudiante o2) {
-				return o1.getEdad().compareTo(o2.getNombre());
+				return o1.getEdad()-o2.getEdad();
 			}
 		});
 		
@@ -54,7 +54,7 @@ public class Partido {
 		};
 		
 		list.remove(0);
-		list.add(cr7);
+		
 		
 		for (JugadorFutbol estudiante : list) {
 			estudiante.hacerGoles();
