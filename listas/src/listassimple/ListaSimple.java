@@ -70,7 +70,7 @@ public class ListaSimple {
 			System.out.println(i.getDato());
 		}
 	}
-	private void imprimir2( Nodo i) {
+	private void imprimir3( Nodo i) {
 		if(i.getSiguiente() == null ) {// lista.size()
 			System.out.println(i.getDato());
 		}else {
